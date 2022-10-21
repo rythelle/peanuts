@@ -1,6 +1,6 @@
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 import {
   Navbar,
   Collapse,
@@ -13,9 +13,9 @@ import {
   DropdownItem,
   Dropdown,
   Button,
-} from "reactstrap";
-import LogoWhite from "../../assets/images/logos/xtremelogowhite.svg";
-import user1 from "../../assets/images/users/user1.jpg";
+} from 'reactstrap';
+import LogoWhite from '../../assets/images/logos/xtremelogowhite.svg';
+import user1 from '../../assets/images/users/user1.jpg';
 
 const Header = ({ showMobmenu }) => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -37,17 +37,8 @@ const Header = ({ showMobmenu }) => {
         </Button>
       </div>
       <div className="hstack gap-2">
-        <Button
-          color="primary"
-          size="sm"
-          className="d-sm-block d-md-none"
-          onClick={Handletoggle}
-        >
-          {isOpen ? (
-            <i className="bi bi-x"></i>
-          ) : (
-            <i className="bi bi-three-dots-vertical"></i>
-          )}
+        <Button color="primary" size="sm" className="d-sm-block d-md-none" onClick={Handletoggle}>
+          {isOpen ? <i className="bi bi-x"></i> : <i className="bi bi-three-dots-vertical"></i>}
         </Button>
       </div>
 
@@ -77,14 +68,8 @@ const Header = ({ showMobmenu }) => {
         </Nav>
         <Dropdown isOpen={dropdownOpen} toggle={toggle}>
           <DropdownToggle color="primary">
-            <div style={{ lineHeight: "0px" }}>
-              <Image
-                src={user1}
-                alt="profile"
-                className="rounded-circle"
-                width="30"
-                height="30"
-              />
+            <div style={{ lineHeight: '0px' }}>
+              <Image src={user1} alt="profile" className="rounded-circle" width="30" height="30" />
             </div>
           </DropdownToggle>
           <DropdownMenu>

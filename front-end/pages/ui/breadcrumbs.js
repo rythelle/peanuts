@@ -1,13 +1,5 @@
-import {
-  Row,
-  Col,
-  Card,
-  CardBody,
-  CardTitle,
-  Breadcrumb,
-  BreadcrumbItem,
-} from "reactstrap";
-import Link from "next/link";
+import { Row, Col, Card, CardBody, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import Link from 'next/link';
 
 const Breadcrumbs = () => {
   return (

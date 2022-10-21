@@ -1,13 +1,13 @@
-import { Button, Nav, NavItem } from "reactstrap";
-import Logo from "../../logo/Logo";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import { Button, Nav, NavItem } from 'reactstrap';
+import Logo from '../../logo/Logo';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const navigation = [
   {
-    title: "Dashboard",
-    href: "/",
-    icon: "bi bi-speedometer2",
+    title: 'Dashboard',
+    href: '/',
+    icon: 'bi bi-speedometer2',
   },
   // {
   //   title: "Dashboard",
@@ -30,9 +30,14 @@ const navigation = [
   //   icon: "bi bi-hdd-stack",
   // },
   {
-    title: "Visão geral",
-    href: "/ui/cards",
-    icon: "bi bi-card-text",
+    title: 'Transações',
+    href: '/ui/transactions',
+    icon: 'bi bi-card-text',
+  },
+  {
+    title: 'Visão geral',
+    href: '/ui/cards',
+    icon: 'bi bi-card-text',
   },
   // {
   //   title: "Balanço",
@@ -60,9 +65,9 @@ const navigation = [
   //   icon: "bi bi-link",
   // },
   {
-    title: "Sobre",
-    href: "/about",
-    icon: "bi bi-people",
+    title: 'Sobre',
+    href: '/about',
+    icon: 'bi bi-people',
   },
   // {
   //   title: "About",
@@ -79,12 +84,7 @@ const Sidebar = ({ showMobilemenu }) => {
     <div className="p-3">
       <div className="d-flex align-items-center">
         <Logo />
-        <Button
-          close
-          size="sm"
-          className="ms-auto d-lg-none"
-          onClick={showMobilemenu}
-        ></Button>
+        <Button close size="sm" className="ms-auto d-lg-none" onClick={showMobilemenu}></Button>
       </div>
       <div className="pt-4 mt-2">
         <Nav vertical className="sidebarNav">
@@ -94,8 +94,8 @@ const Sidebar = ({ showMobilemenu }) => {
                 <a
                   className={
                     location === navi.href
-                      ? "text-primary nav-link py-3"
-                      : "nav-link text-secondary py-3"
+                      ? 'text-primary nav-link py-3'
+                      : 'nav-link text-secondary py-3'
                   }
                 >
                   <i className={navi.icon}></i>
